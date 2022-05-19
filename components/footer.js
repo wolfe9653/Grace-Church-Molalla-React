@@ -18,9 +18,14 @@ const Footer = (props) => {
               <Link href="/">
                 <a className="footer-link large">Home</a>
               </Link>
-              <Link href="/events">
-                <a className="footer-link1 large">Events</a>
-              </Link>
+              <a
+                href="https://www.myegiving.com/App/Giving/grac901264"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="footer-link1 large"
+              >
+                Give
+              </a>
               <Link href="/about-us">
                 <a className="footer-link2 large">Contact Us</a>
               </Link>

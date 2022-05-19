@@ -89,7 +89,10 @@ const Header = (props) => {
         <div data-type="MobileMenu" className="header-mobile-menu">
           <div className="header-top">
             <Link href="/">
-              <a className="header-link10 large">Soft UI Design System</a>
+              <a className="header-link11 large">
+                Soft UI Design System
+                {props.text}
+              </a>
             </Link>
             <div data-type="CloseMobileMenu" className="header-close-menu">
               <svg viewBox="0 0 1024 1024" className="header-icon4">
@@ -100,11 +103,41 @@ const Header = (props) => {
           <div className="header-mid">
             <div className="header-menu1">
               <Link href="/">
-                <a className="header-link11 large">Home</a>
+                <a className="header-link13">{props.Link}</a>
               </Link>
-              <span className="header-text4 large">Profile</span>
+              <Link href="/">
+                <a className="header-link14 large">
+                  {props.Link}
+                  Home
+                </a>
+              </Link>
+              <Link href="/">
+                <a className="header-link15 large">
+                  {props.Link}
+                  Home
+                </a>
+              </Link>
+              <Link href="/">
+                <a className="header-link17 large">
+                  {props.Link}
+                  Home
+                </a>
+              </Link>
+              <Link href="/">
+                <a className="header-link18 large">
+                  {props.Link}
+                  Home
+                </a>
+              </Link>
+              <span className="header-text4 large">
+                Profile
+                {props.Link}
+              </span>
               <Link href="/sermons">
-                <a className="header-link12 large">Coming Soon</a>
+                <a className="header-link19 large">
+                  {props.Link}
+                  Coming Soon
+                </a>
               </Link>
             </div>
           </div>
@@ -326,7 +359,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link10 {
+          .header-link11 {
             color: var(--dl-color-secondary-700);
             font-weight: 600;
             text-decoration: none;
@@ -357,12 +390,46 @@ const Header = (props) => {
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .header-link11 {
+          .header-link13 {
+            font-size: 0.875rem;
+            transition: 0.3s;
+            font-family: Open Sans;
+            font-weight: 400;
+            margin-bottom: var(--dl-space-space-halfunit);
+            letter-spacing: -0.025rem;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .header-link14 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header-link11:hover {
+          .header-link14:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-link15 {
+            transition: 0.3s;
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .header-link15:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-link17 {
+            transition: 0.3s;
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .header-link17:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-link18 {
+            transition: 0.3s;
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .header-link18:hover {
             color: var(--dl-color-gray-500);
           }
           .header-text4 {
@@ -373,11 +440,11 @@ const Header = (props) => {
           .header-text4:hover {
             color: var(--dl-color-gray-500);
           }
-          .header-link12 {
+          .header-link19 {
             transition: 0.3s;
             text-decoration: none;
           }
-          .header-link12:hover {
+          .header-link19:hover {
             color: var(--dl-color-gray-500);
           }
           .header-bot {
@@ -413,12 +480,14 @@ const Header = (props) => {
 Header.defaultProps = {
   text: '',
   link_text: 'https://example.com',
+  Link: 'Home',
   heading: 'Grace Church Molalla',
 }
 
 Header.propTypes = {
   text: PropTypes.string,
   link_text: PropTypes.string,
+  Link: PropTypes.string,
   heading: PropTypes.string,
 }
 
