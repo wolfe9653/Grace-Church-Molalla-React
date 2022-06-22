@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const PrimaryBlueButton = (props) => {
   return (
     <>
-      <div className="primary-blue-button-container">
+      <div className={`primary-blue-button-container ${props.rootClassName} `}>
         <button className="primary-blue-button-button button buttonSmall">
           {props.button}
         </button>
@@ -34,6 +34,9 @@ const PrimaryBlueButton = (props) => {
             cursor: pointer;
             transform: scale(1.02);
           }
+          .primary-blue-button-root-class-name {
+            margin-bottom: var(--dl-space-space-tripleunit);
+          }
         `}
       </style>
     </>
@@ -42,10 +45,12 @@ const PrimaryBlueButton = (props) => {
 
 PrimaryBlueButton.defaultProps = {
   button: 'Button',
+  rootClassName: '',
 }
 
 PrimaryBlueButton.propTypes = {
   button: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default PrimaryBlueButton

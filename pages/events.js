@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import EventPageLeftImage from '../components/event-page-left-image'
 import EventPageRightImage from '../components/event-page-right-image'
+import PrimaryBlueButton from '../components/primary-blue-button'
 import Footer from '../components/footer'
 
 const Events = (props) => {
@@ -45,6 +46,18 @@ const Events = (props) => {
             Description='This summer, 2022, we will be holding "Zoomerang," a sanctity of life VBS in the land down under! Be prepared to experience the jaw-dropping beauty of the Great Barrier Reef, the arid temperature of outback afternoons, the architectural marvels of Australia’s modern cities, and the fascinating eucalyptus forest, home of the koalas.'
             rootClassName="event-page-left-image-root-class-name1"
           ></EventPageLeftImage>
+          <a
+            href="https://gracechurchmolalla.myanswers.com/zoomerang/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="events-link"
+          >
+            <PrimaryBlueButton
+              rootClassName="primary-blue-button-root-class-name"
+              button="Visit the VBS Site to sign up!"
+              className="events-component1"
+            ></PrimaryBlueButton>
+          </a>
           <EventPageRightImage
             Time="Wednesday 7:00 - 9:00 p.m. September-May"
             heading="Fired Up! Youth"
@@ -104,6 +117,12 @@ const Events = (props) => {
             margin-bottom: var(--dl-space-space-doubleunit);
             flex-direction: column;
             justify-content: flex-start;
+          }
+          .events-link {
+            display: contents;
+          }
+          .events-component1 {
+            text-decoration: none;
           }
           @media (max-width: 991px) {
             .events-main {
