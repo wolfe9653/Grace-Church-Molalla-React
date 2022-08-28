@@ -9,9 +9,9 @@ const AboutUs = (props) => {
     <>
       <div className="about-us-container">
         <Head>
-          <title>About Us - Grace Church Molalla</title>
+          <title>About-Us - Grace Church Molalla</title>
           <meta name="description" content="Located at 901 N Molalla Ave" />
-          <meta property="og:title" content="About Us - Grace Church Molalla" />
+          <meta property="og:title" content="About-Us - Grace Church Molalla" />
           <meta
             property="og:description"
             content="Located at 901 N Molalla Ave"

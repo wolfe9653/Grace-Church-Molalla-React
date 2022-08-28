@@ -44,13 +44,13 @@ const PrimaryBlueButton = (props) => {
 }
 
 PrimaryBlueButton.defaultProps = {
-  button: 'Button',
   rootClassName: '',
+  button: 'Button',
 }
 
 PrimaryBlueButton.propTypes = {
-  button: PropTypes.string,
   rootClassName: PropTypes.string,
+  button: PropTypes.string,
 }
 
 export default PrimaryBlueButton

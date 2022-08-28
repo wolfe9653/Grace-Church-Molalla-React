@@ -39,22 +39,22 @@ const Events = (props) => {
             rootClassName="event-page-right-image-root-class-name"
           ></EventPageRightImage>
           <EventPageLeftImage
-            Time="July 11-15"
-            heading="Zoomerang VBS 2022"
-            image_alt="10 Minute Men Image"
-            image_src="/playground_assets/2105_zoomerang-open-graph-400h.webp"
-            Description='This summer, 2022, we will be holding "Zoomerang," a sanctity of life VBS in the land down under! Be prepared to experience the jaw-dropping beauty of the Great Barrier Reef, the arid temperature of outback afternoons, the architectural marvels of Australia’s modern cities, and the fascinating eucalyptus forest, home of the koalas.'
+            Time="Thursday September 8 at 7pm"
+            heading="Grace AWANAS"
+            image_alt="AWANAS"
+            image_src="/playground_assets/awana_fbc_logo_color_square-400h.jpg"
+            Description="AWANA is an exciting kids program for ages 2-13, that meets Thursday nights from 7-8:30pm at Grace Church Molalla.  Game time, small and large group time, snacks, songs, theme nights, and special events are all part of the fun as we share the love of Jesus!"
             rootClassName="event-page-left-image-root-class-name1"
           ></EventPageLeftImage>
           <a
-            href="https://gracechurchmolalla.myanswers.com/zoomerang/"
+            href="https://vbspro.events/p/events/awanagracechurchmolalla"
             target="_blank"
             rel="noreferrer noopener"
             className="events-link"
           >
             <PrimaryBlueButton
+              button="Click to register"
               rootClassName="primary-blue-button-root-class-name"
-              button="Visit the VBS Site to sign up!"
               className="events-component1"
             ></PrimaryBlueButton>
           </a>
@@ -66,7 +66,7 @@ const Events = (props) => {
             rootClassName="event-page-right-image-root-class-name1"
           ></EventPageRightImage>
           <EventPageLeftImage
-            Time="Monday 6 p.m. - 8:30 p.m."
+            Time="Tuesday 6 p.m. - 8:30 p.m."
             heading="Grace Youth"
             image_alt="Grace Youth"
             image_src="/playground_assets/grace%20youth-400h.jpg"
@@ -82,7 +82,7 @@ const Events = (props) => {
             rootClassName="event-page-right-image-root-class-name2"
           ></EventPageRightImage>
           <EventPageLeftImage
-            Time="7:00 pm upstairs in the Gym School Room"
+            Time="7:15 pm upstairs in the Gym School Room"
             heading="Women's Bible Study"
             image_alt="Ladies Bible Study Image"
             image_src="/playground_assets/women%20pray-400h.jpg"
