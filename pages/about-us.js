@@ -79,7 +79,7 @@ const AboutUs = (props) => {
                       }}
                     />
                   </span>
-                  <a href="mailto:info@gracechurchmolalla.net?subject=">
+                  <a href="mailto:Office@GraceChurchMolalla.net?subject=">
                     <span className="about-us-text15">
                       info@gracechurchmolalla.net
                     </span>
